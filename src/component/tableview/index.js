@@ -4,14 +4,14 @@ import PropTypes from 'prop-types'
 
 const TableItem = ({todo,toggleSelect,toggleComplete})=>(
     <tr>
-        <td scope='row'>
+        <th scope='row'>
             <CustomInput 
                 type='checkbox'
                 id={todo.id}
                 checked={todo.isSelected}
                 onChange={()=>toggleSelect(todo.id)}
             />
-        </td>
+        </th>
         <td>
             {todo.time.toDateString()}
         </td>

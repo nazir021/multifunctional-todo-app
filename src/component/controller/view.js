@@ -12,7 +12,7 @@ const View = ({view,changeView}) =>(
                 value='list'
                 id='list-view'
                 onChange={changeView}
-                checked={view == 'list'}
+                checked={view === 'list'}
             /> List View
         </Label>
         <Label for='table-view' className='mr-4'>
@@ -23,7 +23,7 @@ const View = ({view,changeView}) =>(
                 value='table'
                 id='table-view'
                 onChange={changeView}
-                checked={view == 'table'}
+                checked={view === 'table'}
             /> Table View
         </Label>
 
